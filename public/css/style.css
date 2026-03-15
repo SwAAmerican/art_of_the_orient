@@ -166,11 +166,17 @@ body {
   color: var(--text-muted);
 }
 
+.home-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
 .hero-image {
   margin: 0;
-  margin-left: -15rem;
-  margin-right: auto;
-  max-width: 82%;
+  flex: 0 0 58%;
+  max-width: 58%;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -182,6 +188,18 @@ body {
   width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-text p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--text);
 }
 
 .gallery-title {
