@@ -6,6 +6,7 @@
 
 :root {
   --header-blue: #1a365d;
+  --header-china: #b8860b;
   --header-japan: #b91c1c;
   --header-korea: #166534;
   --text: #1f2937;
@@ -36,6 +37,10 @@ body {
 
 .site-header.header-default {
   background: var(--header-blue);
+}
+
+.site-header.header-china {
+  background: var(--header-china);
 }
 
 .site-header.header-japan {

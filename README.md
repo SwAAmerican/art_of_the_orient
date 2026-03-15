@@ -21,5 +21,5 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Navigation
 
-- **Home:** Blue header “Art of the Orient”; buttons: Gallery, Style, Imagery, Production Techniques.
+- **Home:** Blue header “Art of the Orient”; buttons: Gallery, Style, Symbolism, Production Techniques.
 - **Gallery** opens a dropdown: China → Chinese Art (blue header), Japan → Japanese Art (red header), Korea → Korean Art (green header).

@@ -11,7 +11,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 const REGIONS = {
-  china: { title: 'Chinese Art', headerClass: 'header-default' },
+  china: { title: 'Chinese Art', headerClass: 'header-china' },
   japan: { title: 'Japanese Art', headerClass: 'header-japan' },
   korea: { title: 'Korean Art', headerClass: 'header-korea' },
 };
