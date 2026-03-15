@@ -224,6 +224,20 @@ body {
   box-shadow: var(--shadow);
 }
 
+.home-section-korea .section-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.home-section-korea .section-image {
+  margin: 0;
+  flex: 0 0 26%;
+  max-width: 26%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
 .section-text p {
   margin: 0;
   font-size: 1.25rem;
