@@ -16,6 +16,12 @@ const REGIONS = {
   korea: { title: 'Korean Art', headerClass: 'header-korea' },
 };
 
+const STYLE_PAGES = {
+  china: { title: 'Chinese Style', headerClass: 'header-china' },
+  japan: { title: 'Japanese Style', headerClass: 'header-japan' },
+  korea: { title: 'Korean Style', headerClass: 'header-korea' },
+};
+
 function queryArtworks(db, region) {
   const stmt = db.prepare(
     'SELECT id, title, image_url, description, region FROM artworks WHERE region = ? ORDER BY id'
@@ -77,6 +83,16 @@ async function start() {
       headerClass: config.headerClass,
       region,
       artworks,
+    });
+  });
+
+  app.get('/style/:region', (req, res) => {
+    const region = req.params.region.toLowerCase();
+    const config = STYLE_PAGES[region];
+    if (!config) return res.status(404).send('Style not found');
+    res.render('style', {
+      pageTitle: config.title,
+      headerClass: config.headerClass,
     });
   });
 
