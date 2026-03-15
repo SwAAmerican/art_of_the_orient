@@ -168,8 +168,9 @@ body {
 
 .hero-image {
   margin: 0;
-  width: 100%;
-  max-width: 100%;
+  margin-left: -15rem;
+  margin-right: auto;
+  max-width: 82%;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
