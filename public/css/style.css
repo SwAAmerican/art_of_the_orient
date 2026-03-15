@@ -19,7 +19,7 @@
 
 body {
   margin: 0;
-  font-family: 'Georgia', 'Times New Roman', serif;
+  font-family: 'Times New Roman', Times, Georgia, serif;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -29,10 +29,35 @@ body {
 
 /* Header */
 .site-header {
-  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem;
   color: #fff;
   box-shadow: var(--shadow);
+}
+
+.header-home {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius);
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.header-home:hover {
+  background: rgba(255,255,255,.15);
+}
+
+.header-brand {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  min-width: 0;
 }
 
 .site-header.header-default {
@@ -53,7 +78,7 @@ body {
 
 .header-title {
   display: block;
-  font-size: 2.25rem;
+  font-size: 3rem;
   font-weight: 700;
   color: inherit;
   text-decoration: none;
@@ -67,7 +92,7 @@ body {
   gap: 0.5rem;
   align-items: center;
   justify-content: center;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
 }
 
 .nav-btn {
@@ -76,7 +101,7 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0.35rem 0.6rem;
+  padding: 0.5rem 0.85rem;
   border-radius: var(--radius);
   text-decoration: none;
 }
@@ -111,7 +136,8 @@ body {
 
 .dropdown-list a {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.1rem;
+  font-size: 1.05rem;
   color: var(--text);
   text-decoration: none;
 }
@@ -135,7 +161,7 @@ body {
 }
 
 .gallery-title {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   margin: 0 0 1.5rem;
   color: var(--text);
 }
