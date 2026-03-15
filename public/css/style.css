@@ -160,6 +160,22 @@ body {
   color: var(--text-muted);
 }
 
+.hero-image {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 .gallery-title {
   font-size: 2.5rem;
   margin: 0 0 1.5rem;
