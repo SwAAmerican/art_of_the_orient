@@ -217,8 +217,8 @@ body {
 
 .home-section-china .section-image {
   margin: 0;
-  flex: 0 0 42%;
-  max-width: 42%;
+  flex: 0 0 26%;
+  max-width: 26%;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
