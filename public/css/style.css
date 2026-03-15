@@ -231,8 +231,8 @@ body {
 
 .home-section-korea .section-image {
   margin: 0;
-  flex: 0 0 26%;
-  max-width: 26%;
+  flex: 0 0 52%;
+  max-width: 52%;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -268,6 +268,24 @@ body {
 
 .home-section-japan .section-text-below {
   margin-top: 1.5rem;
+}
+
+.home-section-symbolism {
+  flex-wrap: nowrap;
+}
+
+.home-section-symbolism .section-image-symbolism {
+  margin: 0;
+  flex: 0 0 22%;
+  max-width: 22%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.home-section-symbolism .section-text-symbolism {
+  flex: 1;
+  min-width: 0;
 }
 
 .gallery-title {
