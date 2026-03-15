@@ -239,6 +239,23 @@ body {
   vertical-align: middle;
 }
 
+.home-section-japan {
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-section-japan .section-image-japan {
+  flex: none;
+  max-width: 92%;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home-section-japan .section-text-below {
+  margin-top: 1.5rem;
+}
+
 .gallery-title {
   font-size: 2.5rem;
   margin: 0 0 1.5rem;
