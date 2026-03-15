@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= pageTitle %> – Art of the Orient</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <%- include('partials/header', { headerClass, pageTitle }) %>
+  <main class="main gallery-main">
+    <h2 class="gallery-title"><%= pageTitle %></h2>
+    <div class="art-grid">
+      <% artworks.forEach(function(art) { %>
+        <article class="art-card">
+          <% if (art.image_url) { %>
+            <img src="<%= art.image_url %>" alt="<%= art.title %>" class="art-image" loading="lazy">
+          <% } else { %>
+            <div class="art-placeholder">No image</div>
+          <% } %>
+          <div class="art-info">
+            <h3><%= art.title %></h3>
+            <% if (art.description) { %><p><%= art.description %></p><% } %>
+          </div>
+        </article>
+      <% }); %>
+    </div>
+    <% if (!artworks.length) { %>
+      <p class="empty-state">No artworks in this gallery yet.</p>
+    <% } %>
+  </main>
+  <script src="/js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<header class="site-header <%= typeof headerClass !== 'undefined' ? headerClass : 'header-default' %>">
+  <a href="/" class="header-title"><%= typeof pageTitle !== 'undefined' ? pageTitle : 'Art of the Orient' %></a>
+  <nav class="header-nav">
+    <div class="nav-item dropdown">
+      <button type="button" class="nav-btn" id="gallery-btn" aria-haspopup="true" aria-expanded="false">Gallery</button>
+      <ul class="dropdown-list" id="gallery-dropdown" role="menu">
+        <li><a href="/gallery/china" role="menuitem">China</a></li>
+        <li><a href="/gallery/japan" role="menuitem">Japan</a></li>
+        <li><a href="/gallery/korea" role="menuitem">Korea</a></li>
+      </ul>
+    </div>
+    <a href="/#style" class="nav-btn">Style</a>
+    <a href="/#imagery" class="nav-btn">Imagery</a>
+    <a href="/#production" class="nav-btn">Production Techniques</a>
+  </nav>
+</header>
