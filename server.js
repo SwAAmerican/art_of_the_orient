@@ -93,6 +93,10 @@ async function start() {
     res.render('artwork-geumgang-mountains');
   });
 
+  app.get('/gallery/korea/portrait-of-a-beauty', (req, res) => {
+    res.render('artwork-portrait-of-a-beauty');
+  });
+
   app.get('/gallery/:region', (req, res) => {
     const region = req.params.region.toLowerCase();
     const config = REGIONS[region];
@@ -130,6 +134,11 @@ async function start() {
               title: 'A Panoramic View of the Geumgang Mountains',
               image_url: '/images/geumgang-mountains.png',
               detailUrl: '/gallery/korea/geumgang-mountains',
+            },
+            {
+              title: 'Portrait of a Beauty',
+              image_url: '/images/portrait-of-a-beauty.png',
+              detailUrl: '/gallery/korea/portrait-of-a-beauty',
             },
           ]
         : [];

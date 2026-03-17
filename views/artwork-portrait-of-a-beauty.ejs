@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portrait of a Beauty – Art of the Orient</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .artwork-detail-image-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .artwork-detail-image-wrap img {
+      max-width: min(95vw, 800px);
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .artwork-meta {
+      max-width: 720px;
+      margin: 0 auto 1.5rem;
+      padding: 0 1rem;
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+    .artwork-meta li {
+      margin-bottom: 0.35rem;
+    }
+    .artwork-detail-text {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+    }
+    .artwork-detail-text p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <%- include('partials/header', { headerClass: 'header-korea', pageTitle: 'Korean Art' }) %>
+  <%- include('partials/page-wrap-start') %>
+  <main class="main">
+    <h2 class="gallery-title" style="text-align: center;">Portrait of a Beauty</h2>
+    <div class="artwork-detail-image-wrap">
+      <img src="/images/portrait-of-a-beauty.png" alt="Portrait of a Beauty by Sin Yun-bok, late Joseon dynasty painting of a woman" />
+    </div>
+    <ul class="artwork-meta">
+      <li>Year: Late 1800s</li>
+      <li>Artist: Sin Yun-bok</li>
+    </ul>
+    <section class="artwork-detail-text section-text section-text-full">
+      <p>Miindo, meaning roughly \"Portrait of a Beauty,\" is one of the most celebrated and enigmatic works in the history of Korean painting, attributed to Sin Yun-bok and dating to the late Joseon dynasty of the eighteenth or early nineteenth century. The painting depicts a single female figure — a gisaeng, or educated courtesan — shown in three-quarter view against a plain, unadorned ground, her posture one of composed stillness that nonetheless carries an unmistakable charge of psychological presence. She is dressed in the layered silk robes of the period, rendered in soft mineral pigments of pale blue, white, and rose, and her hair is elaborately arranged in the high formal style of the Joseon court, adorned with a long pin whose elegant line echoes the graceful curve of her neck and shoulder. Sin Yun-bok's brushwork here is at its most refined and controlled — the outlines of the figure drawn with a fluid, unhurried confidence, the color applied in delicate washes that suggest the weight and texture of silk without ever laboring the description. What elevates the painting above mere costume study is the face: rendered with an economy of means that borders on the severe, it nonetheless communicates an interior life of considerable complexity, the subject's expression poised between composure and melancholy in a way that has captivated viewers for two centuries.</p>
+      <p>Miindo occupies a unique position in the Korean artistic tradition as perhaps the finest single example of female portraiture in the entire Joseon dynasty canon — a work that manages simultaneously to reflect and to quietly transcend the social circumstances of its subject. The gisaeng who populate Sin Yun-bok's paintings existed in a paradoxical social position in Joseon Korea: trained from childhood in music, poetry, calligraphy, and the arts of refined conversation, they were among the most educated women in a society that offered formal education almost exclusively to men, yet they were officially classified among the lowest social strata and denied the respectability accorded to women of the yangban aristocratic class. Sin Yun-bok's decision to render such a subject with the compositional gravity and painterly seriousness traditionally reserved for portraits of scholars and officials was itself a statement — subtle by the standards of overt social protest, but legible to any viewer familiar with the conventions of Joseon portraiture. The painting is held at the Gan-song Art Museum in Seoul and has achieved in modern Korean culture a degree of iconic recognition that places it alongside Jeong Seon's mountain panoramas and Kim Hongdo's genre scenes as one of the defining images of the Joseon artistic imagination — a face that seems to look back at the viewer across the centuries with an expression that refuses to be entirely explained.</p>
+    </section>
+  </main>
+  <%- include('partials/page-wrap-end') %>
+  <script src="/js/nav.js"></script>
+</body>
+</html>
+
