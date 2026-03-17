@@ -160,6 +160,41 @@ async function start() {
     });
   });
 
+  app.get('/style/japan/yamato-e', (req, res) => {
+    res.render('style-yamato-e', {
+      pageTitle: 'Yamato-e',
+      headerClass: 'header-japan',
+    });
+  });
+
+  app.get('/style/japan/rinpa', (req, res) => {
+    res.render('style-rinpa', {
+      pageTitle: 'Rinpa',
+      headerClass: 'header-japan',
+    });
+  });
+
+  app.get('/style/japan/kano-school', (req, res) => {
+    res.render('style-kano-school', {
+      pageTitle: 'Kano School',
+      headerClass: 'header-japan',
+    });
+  });
+
+  app.get('/style/japan/zenga', (req, res) => {
+    res.render('style-zenga', {
+      pageTitle: 'Zenga',
+      headerClass: 'header-japan',
+    });
+  });
+
+  app.get('/style/japan/ukiyo-e', (req, res) => {
+    res.render('style-ukiyo-e', {
+      pageTitle: 'Ukiyo-e',
+      headerClass: 'header-japan',
+    });
+  });
+
   app.get('/symbolism', (req, res) => {
     res.render('symbolism', {
       pageTitle: 'Oriental Symbolism',
