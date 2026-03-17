@@ -194,6 +194,28 @@ body {
   object-position: top center;
 }
 
+/* Right decorative strip (calligraphy) – all pages */
+.right-deco {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: min(48vw, 560px);
+  min-width: 260px;
+  max-width: 560px;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.right-deco img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
 /* Main */
 .main {
   flex: 1;
