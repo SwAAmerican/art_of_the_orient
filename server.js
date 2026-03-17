@@ -107,7 +107,9 @@ async function start() {
       },
     ] : [];
     const artworks =
-      region === 'china' || region === 'japan' ? [] : queryArtworks(db, region);
+      region === 'china' || region === 'japan' || region === 'korea'
+        ? []
+        : queryArtworks(db, region);
     res.render('gallery', {
       pageTitle: config.title,
       headerClass: config.headerClass,
