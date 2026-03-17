@@ -124,6 +124,13 @@ async function start() {
     });
   });
 
+  app.get('/production/silk-sizing', (req, res) => {
+    res.render('silk-sizing', {
+      pageTitle: 'Silk Sizing',
+      headerClass: 'header-production',
+    });
+  });
+
   app.get('/api/artworks', (req, res) => {
     const artworks = queryAllArtworks(db, req.query.region || null);
     res.json(artworks);
