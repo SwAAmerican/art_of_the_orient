@@ -335,6 +335,26 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,.12);
 }
 
+.art-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.art-card-featured {
+  grid-column: 1 / -1;
+  max-width: 900px;
+  justify-self: center;
+}
+
+.art-card-featured .art-image-full {
+  height: auto;
+  min-height: 280px;
+  max-height: 420px;
+  object-fit: contain;
+  object-position: center;
+  background: #f3f4f6;
+}
+
 .art-image {
   width: 100%;
   height: 220px;

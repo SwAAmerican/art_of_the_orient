@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Along the River During the Qingming Festival. – Art of the Orient</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .artwork-detail-image-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .artwork-detail-image-wrap img {
+      max-width: min(95vw, 1000px);
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .artwork-meta {
+      max-width: 720px;
+      margin: 0 auto 1.5rem;
+      padding: 0 1rem;
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+    .artwork-meta li {
+      margin-bottom: 0.35rem;
+    }
+    .artwork-detail-text {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+    }
+    .artwork-detail-text p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <%- include('partials/header', { headerClass: 'header-china', pageTitle: 'Chinese Art' }) %>
+  <main class="main">
+    <h2 class="gallery-title" style="text-align: center;">Along the River During the Qingming Festival.</h2>
+    <div class="artwork-detail-image-wrap">
+      <img src="/images/qingming-festival.png" alt="Segment from Along the River During the Qingming Festival, city gate at Bianjing" />
+    </div>
+    <ul class="artwork-meta">
+      <li>Year: 1085–1145</li>
+      <li>Artist: Zhang Zeduan</li>
+    </ul>
+    <section class="artwork-detail-text section-text section-text-full">
+      <p>Along the River During the Qingming Festival, painted by Zhang Zeduan during the Northern Song dynasty around 1120, stands as perhaps the single most celebrated painting in the entire history of Chinese art. Executed in ink and light color on silk, the work unfolds as a horizontal handscroll nearly six meters in length, drawing the viewer's eye through an extraordinarily detailed panorama of life along the Bian River outside the imperial capital of Bianjing — present-day Kaifeng. The composition moves from quiet rural countryside through bustling river commerce and finally into the dense, teeming streets of the city itself, capturing merchants, scholars, laborers, boatmen, and street vendors in hundreds of individually observed vignettes. It is not merely a painting but a document — a visual census of a civilization at the height of its prosperity, rendered with an attentiveness to everyday human activity that remains astonishing nearly a thousand years after its creation.</p>
+      <p>The painting carries a melancholy historical dimension that deepens its significance considerably. The Northern Song dynasty and its glittering capital were destroyed by Jurchen invaders in 1127, just a few years after the scroll was completed, making Zhang Zeduan's panorama an inadvertent elegy for a world that would shortly cease to exist. The scroll thus became one of the most coveted objects in Chinese imperial history — treasured, stolen, hidden, and recovered across successive dynasties — and its survival to the present day is itself a remarkable story. It is now held in the Palace Museum in Beijing and is displayed only rarely due to its fragility, which has only deepened its status as a near-mythological object in Chinese cultural memory. For any student of Chinese painting, encountering this scroll — even in reproduction — is an encounter with the ambition, humanity, and extraordinary technical refinement that define the Song dynasty at its most confident.</p>
+    </section>
+  </main>
+  <script src="/js/nav.js"></script>
+</body>
+</html>

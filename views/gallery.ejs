@@ -11,6 +11,18 @@
   <main class="main gallery-main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <div class="art-grid">
+      <% if (typeof featuredArtwork !== 'undefined' && featuredArtwork) { %>
+        <a href="<%= featuredArtwork.detailUrl %>" class="art-card art-card-link art-card-featured">
+          <% if (featuredArtwork.image_url) { %>
+            <img src="<%= featuredArtwork.image_url %>" alt="<%= featuredArtwork.title %>" class="art-image art-image-full" loading="lazy">
+          <% } else { %>
+            <div class="art-placeholder">No image</div>
+          <% } %>
+          <div class="art-info">
+            <h3><%= featuredArtwork.title %></h3>
+          </div>
+        </a>
+      <% } %>
       <% artworks.forEach(function(art) { %>
         <article class="art-card">
           <% if (art.image_url) { %>
