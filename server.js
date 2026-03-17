@@ -77,22 +77,42 @@ async function start() {
     res.render('artwork-qingming');
   });
 
+  app.get('/gallery/china/early-spring', (req, res) => {
+    res.render('artwork-early-spring');
+  });
+
+  app.get('/gallery/china/travelers-mountains-streams', (req, res) => {
+    res.render('artwork-travelers-mountains-streams');
+  });
+
   app.get('/gallery/:region', (req, res) => {
     const region = req.params.region.toLowerCase();
     const config = REGIONS[region];
     if (!config) return res.status(404).send('Gallery not found');
-    const featuredArtwork = region === 'china' ? {
-      title: 'Along the River During the Qingming Festival.',
-      image_url: '/images/qingming-festival.png',
-      detailUrl: '/gallery/china/along-the-river-qingming',
-    } : null;
+    const featuredArtworks = region === 'china' ? [
+      {
+        title: 'Along the River During the Qingming Festival.',
+        image_url: '/images/qingming-festival.png',
+        detailUrl: '/gallery/china/along-the-river-qingming',
+      },
+      {
+        title: 'Early Spring',
+        image_url: '/images/early-spring.png',
+        detailUrl: '/gallery/china/early-spring',
+      },
+      {
+        title: 'Travelers Among Mountains and Streams',
+        image_url: '/images/travelers-mountains-streams.jpg',
+        detailUrl: '/gallery/china/travelers-mountains-streams',
+      },
+    ] : [];
     const artworks = region === 'china' ? [] : queryArtworks(db, region);
     res.render('gallery', {
       pageTitle: config.title,
       headerClass: config.headerClass,
       region,
       artworks,
-      featuredArtwork,
+      featuredArtworks,
     });
   });
 

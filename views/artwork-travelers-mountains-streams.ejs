@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelers Among Mountains and Streams – Art of the Orient</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .artwork-detail-image-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .artwork-detail-image-wrap img {
+      max-width: min(95vw, 1000px);
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .artwork-meta {
+      max-width: 720px;
+      margin: 0 auto 1.5rem;
+      padding: 0 1rem;
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+    .artwork-meta li {
+      margin-bottom: 0.35rem;
+    }
+    .artwork-detail-text {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+    }
+    .artwork-detail-text p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <%- include('partials/header', { headerClass: 'header-china', pageTitle: 'Chinese Art' }) %>
+  <main class="main">
+    <h2 class="gallery-title" style="text-align: center;">Travelers Among Mountains and Streams</h2>
+    <div class="artwork-detail-image-wrap">
+      <img src="/images/travelers-mountains-streams.jpg" alt="Travelers Among Mountains and Streams by Fan Kuan, Northern Song dynasty landscape" />
+    </div>
+    <ul class="artwork-meta">
+      <li>Year: ~1000</li>
+      <li>Author: Fan Kuan</li>
+    </ul>
+    <section class="artwork-detail-text section-text section-text-full">
+      <p>Travelers Among Mountains and Streams, painted by Fan Kuan around the turn of the eleventh century during the Northern Song dynasty, is among the most overwhelming and technically astonishing works in the history of Chinese painting. The composition is arranged in a dramatic vertical format on silk, presenting a sheer cliff face of almost incomprehensible scale that occupies the upper two thirds of the picture plane, its summit disappearing into a narrow band of mist before reasserting itself against the pale sky above. A cascading waterfall descends from the rocks at the center, and a dense forest of ink-painted trees crowds the base of the mountain with a precision and variety that rewards prolonged examination. In the lower right of the composition, nearly invisible against the vast geological drama surrounding them, a small party of travelers picks its way along a rocky path accompanied by laden mules — figures so diminutive relative to their surroundings that they register less as subjects than as a unit of measurement, their smallness existing solely to communicate the crushing, vertiginous immensity of the landscape through which they move. It is a painting that does not invite contemplation so much as demand submission.</p>
+      <p>Fan Kuan's compositional strategy in Travelers Among Mountains and Streams represents one of the most direct visual expressions of a philosophical idea in all of Chinese art. Where other Song landscape painters sought to balance humanity and nature in a relationship of harmonious dialogue, Fan Kuan tips that balance decisively and deliberately in nature's favor — the mountain does not share the picture plane with its human inhabitants, it consumes it entirely, reducing the travelers of the title to a footnote in a composition that belongs absolutely to stone, water, mist, and ancient forest. This was understood in the Song dynasty not as a pessimistic diminishment of human significance but as a spiritually clarifying statement about the proper relationship between the individual and the cosmos — a reminder, rooted equally in Daoist and Confucian thought, that the cultivated person achieves wisdom and moral stature not by asserting dominance over nature but by recognizing and accepting their place within it. Fan Kuan's name translates roughly as "broadly tolerant" or "expansive in mind," a name his contemporaries apparently bestowed in recognition of exactly the philosophical temperament that Travelers Among Mountains and Streams so magnificently embodies. The painting is held at the National Palace Museum in Taipei, where it hangs as one of the foundational works of the Chinese pictorial tradition and a near-inexhaustible object of scholarly attention.</p>
+    </section>
+  </main>
+  <script src="/js/nav.js"></script>
+</body>
+</html>

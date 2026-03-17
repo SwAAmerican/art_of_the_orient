@@ -11,17 +11,19 @@
   <main class="main gallery-main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <div class="art-grid">
-      <% if (typeof featuredArtwork !== 'undefined' && featuredArtwork) { %>
-        <a href="<%= featuredArtwork.detailUrl %>" class="art-card art-card-link art-card-featured">
-          <% if (featuredArtwork.image_url) { %>
-            <img src="<%= featuredArtwork.image_url %>" alt="<%= featuredArtwork.title %>" class="art-image art-image-full" loading="lazy">
-          <% } else { %>
-            <div class="art-placeholder">No image</div>
-          <% } %>
-          <div class="art-info">
-            <h3><%= featuredArtwork.title %></h3>
-          </div>
-        </a>
+      <% if (typeof featuredArtworks !== 'undefined' && featuredArtworks.length) { %>
+        <% featuredArtworks.forEach(function(featured) { %>
+          <a href="<%= featured.detailUrl %>" class="art-card art-card-link art-card-featured">
+            <% if (featured.image_url) { %>
+              <img src="<%= featured.image_url %>" alt="<%= featured.title %>" class="art-image art-image-full" loading="lazy">
+            <% } else { %>
+              <div class="art-placeholder">No image</div>
+            <% } %>
+            <div class="art-info">
+              <h3><%= featured.title %></h3>
+            </div>
+          </a>
+        <% }); %>
       <% } %>
       <% artworks.forEach(function(art) { %>
         <article class="art-card">
@@ -37,7 +39,7 @@
         </article>
       <% }); %>
     </div>
-    <% if (!artworks.length && !(typeof featuredArtwork !== 'undefined' && featuredArtwork)) { %>
+    <% if (!artworks.length && (!(typeof featuredArtworks !== 'undefined' && featuredArtworks && featuredArtworks.length))) { %>
       <p class="empty-state">No artworks in this gallery yet.</p>
     <% } %>
   </main>

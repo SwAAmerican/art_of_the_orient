@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Early Spring – Art of the Orient</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .artwork-detail-image-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .artwork-detail-image-wrap img {
+      max-width: min(95vw, 1000px);
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .artwork-meta {
+      max-width: 720px;
+      margin: 0 auto 1.5rem;
+      padding: 0 1rem;
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+    .artwork-meta li {
+      margin-bottom: 0.35rem;
+    }
+    .artwork-detail-text {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+    }
+    .artwork-detail-text p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <%- include('partials/header', { headerClass: 'header-china', pageTitle: 'Chinese Art' }) %>
+  <main class="main">
+    <h2 class="gallery-title" style="text-align: center;">Early Spring</h2>
+    <div class="artwork-detail-image-wrap">
+      <img src="/images/early-spring.png" alt="Early Spring by Guo Xi, Northern Song dynasty landscape painting" />
+    </div>
+    <ul class="artwork-meta">
+      <li>Year: 1072</li>
+      <li>Author: Guo Xi</li>
+    </ul>
+    <section class="artwork-detail-text section-text section-text-full">
+      <p>Early Spring, painted by Guo Xi in 1072 during the Northern Song dynasty, is one of the supreme achievements of Chinese landscape painting and one of the most studied works in the entire East Asian artistic tradition. Executed in ink and light color on silk, the painting presents a towering vertical composition in which a massive central mountain emerges from swirling mist and atmospheric haze, flanked by subsidiary peaks and rocky outcroppings that recede into the distance with remarkable spatial sophistication. Guo Xi employed a technique of layered ink wash — building tone through successive applications of diluted ink — to create an atmosphere of damp, early spring air in which solid forms seem to dissolve and reconstitute themselves at the edges, as though the mountain itself were breathing. Tiny figures of travelers, fishermen, and scholars are scattered through the composition at various scales, and nestled into the cliffs of the middle distance, almost easy to overlook on first viewing, are the modest structures of a monastery — a quiet assertion of human civilization persisting within and beneath the overwhelming grandeur of the natural world.</p>
+      <p>Guo Xi was not merely a painter but a theorist, and his treatise on landscape painting — recorded by his son — articulates a philosophy that Early Spring embodies with almost programmatic completeness. For Guo Xi, the ideal landscape was one that invited the viewer to imaginatively inhabit it — to feel the cool air, to hear the water, to experience the spiritual renewal that contact with unspoiled nature was believed to provide for the Confucian scholar burdened by the demands of official life. The painting's subject, the transition from winter's austerity into the tentative awakening of spring, carries unmistakable symbolic weight in the Chinese literary and philosophical tradition, suggesting renewal, resilience, and the cyclical restoration of natural and political order. Early Spring is held at the National Palace Museum in Taipei, where it is regarded as one of the institution's most prized possessions, and it remains after nearly a thousand years a definitive statement of what Chinese landscape painting at its most intellectually ambitious sought to achieve — not the depiction of a place, but the evocation of an entire philosophy of existence.</p>
+    </section>
+  </main>
+  <script src="/js/nav.js"></script>
+</body>
+</html>
