@@ -85,27 +85,42 @@ async function start() {
     res.render('artwork-travelers-mountains-streams');
   });
 
+  app.get('/gallery/japan/wind-god-thunder-god', (req, res) => {
+    res.render('artwork-wind-god-thunder-god');
+  });
+
   app.get('/gallery/:region', (req, res) => {
     const region = req.params.region.toLowerCase();
     const config = REGIONS[region];
     if (!config) return res.status(404).send('Gallery not found');
-    const featuredArtworks = region === 'china' ? [
-      {
-        title: 'Along the River During the Qingming Festival.',
-        image_url: '/images/qingming-festival.png',
-        detailUrl: '/gallery/china/along-the-river-qingming',
-      },
-      {
-        title: 'Early Spring',
-        image_url: '/images/early-spring.png',
-        detailUrl: '/gallery/china/early-spring',
-      },
-      {
-        title: 'Travelers Among Mountains and Streams',
-        image_url: '/images/travelers-mountains-streams-icon.jpg',
-        detailUrl: '/gallery/china/travelers-mountains-streams',
-      },
-    ] : [];
+    const featuredArtworks =
+      region === 'china'
+        ? [
+            {
+              title: 'Along the River During the Qingming Festival.',
+              image_url: '/images/qingming-festival.png',
+              detailUrl: '/gallery/china/along-the-river-qingming',
+            },
+            {
+              title: 'Early Spring',
+              image_url: '/images/early-spring.png',
+              detailUrl: '/gallery/china/early-spring',
+            },
+            {
+              title: 'Travelers Among Mountains and Streams',
+              image_url: '/images/travelers-mountains-streams-icon.jpg',
+              detailUrl: '/gallery/china/travelers-mountains-streams',
+            },
+          ]
+        : region === 'japan'
+        ? [
+            {
+              title: 'Wind God and Thunder God',
+              image_url: '/images/wind-god-thunder-god-icon.png',
+              detailUrl: '/gallery/japan/wind-god-thunder-god',
+            },
+          ]
+        : [];
     const artworks =
       region === 'china' || region === 'japan' || region === 'korea'
         ? []
