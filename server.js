@@ -85,6 +85,10 @@ async function start() {
     res.render('artwork-travelers-mountains-streams');
   });
 
+  app.get('/gallery/japan/winter-landscape', (req, res) => {
+    res.render('artwork-winter-landscape');
+  });
+
   app.get('/gallery/japan/wind-god-thunder-god', (req, res) => {
     res.render('artwork-wind-god-thunder-god');
   });
@@ -126,6 +130,11 @@ async function start() {
               title: 'Wind God and Thunder God',
               image_url: '/images/wind-god-thunder-god-icon.png',
               detailUrl: '/gallery/japan/wind-god-thunder-god',
+            },
+            {
+              title: 'Winter Landscape',
+              image_url: '/images/winter-landscape-sesshu.png',
+              detailUrl: '/gallery/japan/winter-landscape',
             },
           ]
         : region === 'korea'

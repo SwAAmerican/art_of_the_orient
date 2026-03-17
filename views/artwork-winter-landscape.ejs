@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winter Landscape – Art of the Orient</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .artwork-detail-image-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .artwork-detail-image-wrap img {
+      max-width: min(95vw, 1000px);
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .artwork-meta {
+      max-width: 720px;
+      margin: 0 auto 1.5rem;
+      padding: 0 1rem;
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+    .artwork-meta li {
+      margin-bottom: 0.35rem;
+    }
+    .artwork-detail-text {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+    }
+    .artwork-detail-text p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <%- include('partials/header', { headerClass: 'header-japan', pageTitle: 'Japanese Art' }) %>
+  <%- include('partials/page-wrap-start') %>
+  <main class="main">
+    <h2 class="gallery-title" style="text-align: center;">Winter Landscape</h2>
+    <div class="artwork-detail-image-wrap">
+      <img src="/images/winter-landscape-sesshu.png" alt="Winter Landscape by Sesshū Tōyō, Muromachi period Japanese ink landscape painting" />
+    </div>
+    <ul class="artwork-meta">
+      <li>Year: 1470s</li>
+      <li>Artist: Sesshū Tōyō</li>
+    </ul>
+    <section class="artwork-detail-text section-text section-text-full">
+      <p>Winter Landscape, painted by Sesshū Tōyō in the 1470s during the Muromachi period, is among the most concentrated and formally audacious works in the history of Japanese ink painting — a small vertical composition of extraordinary psychological intensity that distills an entire philosophy of art and perception into a space barely larger than a sheet of paper. The painting depicts a winter scene of stark, angular cliffs and bare rocky outcroppings rendered in Sesshū's distinctively sharp, almost aggressive brushwork — jagged, angular strokes of ink that fracture the picture plane into crystalline planes of dark and light, eschewing entirely the soft, rounded forms and atmospheric gradation that characterized the Chinese landscape models from which Sesshū had learned. A solitary figure — a monk or traveler — makes his way along a path toward a distant temple or monastic structure barely visible through the cold haze of the upper composition, and above everything a cliff face descends from the top of the picture in sharp diagonal strokes that feel almost architectural in their severity. The ink tones range from the palest diluted wash to the deepest, most saturated black, and Sesshū deploys these extremes with a confidence that produces an image simultaneously spare and dense, minimal in its elements but overwhelming in its cumulative atmospheric force.</p>
+      <p>Sesshū Tōyō occupies a singular position in the history of Japanese painting as the artist who most completely absorbed the Chinese ink landscape tradition — he traveled to China in 1467 and studied its painting firsthand at a time when few Japanese artists had done so — and then transformed what he learned into something irreducibly and distinctively Japanese. Winter Landscape demonstrates this transformation with particular clarity. Where Chinese Song and Yuan dynasty landscape painters sought to evoke the mist, moisture, and atmospheric dissolution of the natural world through soft, blended ink washes, Sesshū answers with a vocabulary of hard, decisive, angular strokes that impose a kind of structural geometry on the landscape — as though the mountain and the cliff and the frozen ground were being perceived not through romantically softened eyes but with a clarity sharpened by Zen practice and winter cold. This approach, known in Japanese critical tradition as the haboku and hatsuboku styles in their most extreme forms, would prove enormously influential on subsequent generations of Japanese ink painters, establishing a native aesthetic standard independent of Chinese precedent. Winter Landscape is held at the Tokyo National Museum and is designated a National Treasure of Japan — a formal recognition that it represents not merely a great work of art but a defining expression of the Japanese cultural and aesthetic identity.</p>
+    </section>
+  </main>
+  <%- include('partials/page-wrap-end') %>
+  <script src="/js/nav.js"></script>
+</body>
+</html>
+
