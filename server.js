@@ -101,6 +101,10 @@ async function start() {
     res.render('artwork-portrait-of-a-beauty');
   });
 
+  app.get('/gallery/korea/chaekgeori', (req, res) => {
+    res.render('artwork-chaekgeori');
+  });
+
   app.get('/gallery/:region', (req, res) => {
     const region = req.params.region.toLowerCase();
     const config = REGIONS[region];
@@ -148,6 +152,11 @@ async function start() {
               title: 'Portrait of a Beauty',
               image_url: '/images/portrait-of-a-beauty.png',
               detailUrl: '/gallery/korea/portrait-of-a-beauty',
+            },
+            {
+              title: 'Chaekgeori',
+              image_url: '/images/chaekgeori-yi-eungrok.png',
+              detailUrl: '/gallery/korea/chaekgeori',
             },
           ]
         : [];

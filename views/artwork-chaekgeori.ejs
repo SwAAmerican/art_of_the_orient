@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaekgeori – Art of the Orient</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .artwork-detail-image-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .artwork-detail-image-wrap img {
+      max-width: min(95vw, 1000px);
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .artwork-meta {
+      max-width: 720px;
+      margin: 0 auto 1.5rem;
+      padding: 0 1rem;
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+    .artwork-meta li {
+      margin-bottom: 0.35rem;
+    }
+    .artwork-detail-text {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+    }
+    .artwork-detail-text p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <%- include('partials/header', { headerClass: 'header-korea', pageTitle: 'Korean Art' }) %>
+  <%- include('partials/page-wrap-start') %>
+  <main class="main">
+    <h2 class="gallery-title" style="text-align: center;">Chaekgeori</h2>
+    <div class="artwork-detail-image-wrap">
+      <img src="/images/chaekgeori-yi-eungrok.png" alt="Chaekgeori screen by Yi Eungrok, Joseon dynasty scholar's bookshelf painting" />
+    </div>
+    <ul class="artwork-meta">
+      <li>Year: 1864-1872</li>
+      <li>Artist: Yi Eungrok</li>
+    </ul>
+    <section class="artwork-detail-text section-text section-text-full">
+      <p>The Chaekgeori screen attributed to Yi Eungrok, produced during the latter half of the nineteenth century in the closing decades of the Joseon dynasty, represents the most ambitious and fully realized expression of a genre unique to Korean painting — the trompe-l'oeil depiction of the scholar's bookshelf and its accumulated objects, rendered with an illusionistic precision and a decorative richness that places it in a category entirely its own within the East Asian pictorial tradition. Spanning multiple screen panels, the composition presents a series of shelves receding into a shallow pictorial space, each compartment densely populated with the objects that defined the ideal life of Joseon scholarship and cultivation — stacked and standing volumes bound in silk and paper, their spines marked with Chinese characters identifying their contents; ceramic vessels of various periods and origins; brush holders bristling with writing implements; inkstones of prized stone; lacquered boxes; scholarly curiosities; musical instruments; and among all these the auspicious decorative objects — coral, jade, bronze censers, and porcelain — whose symbolic associations with longevity, learning, and good fortune enriched the composition with a layer of meaning invisible to the uninitiated but immediately legible to any educated Joseon viewer. Yi Eungrok's handling of illusionistic space is remarkable for its sophistication, each shelf rendered with careful attention to the cast shadows, overlapping forms, and recession of objects that create the impression of actual depth, the painter deploying a form of parallel perspective that stops short of full Western illusionism but achieves a convincing spatial plausibility entirely adequate to the genre's central ambition — to make the viewer feel that they are looking not at a painting but through a window into an actual scholar's cabinet of carefully accumulated treasures.</p>
+      <p>The Chaekgeori genre to which Yi Eungrok's screen belongs originated in the royal court of King Jeongjo in the late eighteenth century and spread rapidly through all levels of Joseon society, from the palaces of the aristocracy to the homes of the emerging merchant class, carried by the same cultural forces that drove the broader democratization of artistic production and consumption in late Joseon Korea — a growing merchant wealth that sought cultural legitimacy through the acquisition of objects and images associated with scholarly refinement, and a popular appetite for the auspicious symbolism that the scholar's objects carried with them as reliably as any Minhwa tiger or longevity symbol. The objects depicted in a Chaekgeori screen were never merely still life in the Western sense — neutral subjects chosen for their formal or compositional interest — but a carefully curated collection of symbols, each item carrying specific associations with learning, virtue, longevity, official success, and the cultivated life that Joseon Confucian culture held as its highest ideal, the accumulated weight of these associations transforming what might appear to be a straightforward inventory of a scholar's possessions into a richly coded visual statement about aspiration, cultivation, and the values that gave a life meaning and dignity. Yi Eungrok, working within the royal court painting bureau, brought to this popular genre a technical command and a compositional ambition that elevated it to the level of high art, and his surviving screens are now regarded as among the finest examples of late Joseon painting — objects that reward the kind of prolonged, attentive looking that the scholar's life they depict was itself understood to cultivate and exemplify.</p>
+    </section>
+  </main>
+  <%- include('partials/page-wrap-end') %>
+  <script src="/js/nav.js"></script>
+</body>
+</html>
