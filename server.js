@@ -89,6 +89,10 @@ async function start() {
     res.render('artwork-wind-god-thunder-god');
   });
 
+  app.get('/gallery/korea/geumgang-mountains', (req, res) => {
+    res.render('artwork-geumgang-mountains');
+  });
+
   app.get('/gallery/:region', (req, res) => {
     const region = req.params.region.toLowerCase();
     const config = REGIONS[region];
@@ -118,6 +122,14 @@ async function start() {
               title: 'Wind God and Thunder God',
               image_url: '/images/wind-god-thunder-god-icon.png',
               detailUrl: '/gallery/japan/wind-god-thunder-god',
+            },
+          ]
+        : region === 'korea'
+        ? [
+            {
+              title: 'A Panoramic View of the Geumgang Mountains',
+              image_url: '/images/geumgang-mountains.png',
+              detailUrl: '/gallery/korea/geumgang-mountains',
             },
           ]
         : [];

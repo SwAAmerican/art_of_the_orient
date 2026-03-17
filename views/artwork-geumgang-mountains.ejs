@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Panoramic View of the Geumgang Mountains – Art of the Orient</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .artwork-detail-image-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .artwork-detail-image-wrap img {
+      max-width: min(95vw, 1000px);
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .artwork-meta {
+      max-width: 720px;
+      margin: 0 auto 1.5rem;
+      padding: 0 1rem;
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+    .artwork-meta li {
+      margin-bottom: 0.35rem;
+    }
+    .artwork-detail-text {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+    }
+    .artwork-detail-text p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <%- include('partials/header', { headerClass: 'header-korea', pageTitle: 'Korean Art' }) %>
+  <%- include('partials/page-wrap-start') %>
+  <main class="main">
+    <h2 class="gallery-title" style="text-align: center;">A Panoramic View of the Geumgang Mountains</h2>
+    <div class="artwork-detail-image-wrap">
+      <img src="/images/geumgang-mountains.png" alt="A Panoramic View of the Geumgang Mountains by Jeong Seon, Korean landscape painting" />
+    </div>
+    <ul class="artwork-meta">
+      <li>Year: 1734</li>
+      <li>Artist: Jeong Seon</li>
+    </ul>
+    <section class="artwork-detail-text section-text section-text-full">
+      <p>A Panoramic View of the Geumgang Mountains, painted by Jeong Seon in 1734 during the Joseon dynasty, is widely regarded as the single most important work in the history of Korean landscape painting and one of the most compositionally distinctive paintings in all of East Asian art. The work is immediately arresting in its format — rather than the conventional vertical or horizontal scroll arrangement inherited from the Chinese tradition, Jeong Seon presented his panorama within a circular composition, a choice that transforms the landscape into something resembling a vision or a revelation, as though the viewer were gazing down upon the mountains through a celestial aperture. The Geumgang Mountains — located in what is today North Korea and long venerated as the most spiritually and scenically sublime landscape on the Korean peninsula — are rendered with a bold, almost abstract vocabulary of sharp vertical ink strokes that capture the crystalline, splintered quality of the granite peaks with a directness and confidence that owes nothing to convention and everything to direct, sustained observation of the actual terrain. In the lower portion of the composition, softer rounded foothills rendered in ink wash provide a counterpoint to the jagged peaks above, and scattered temple structures and pavilions are just visible among the trees, grounding the sublime in the human and the devotional.</p>
+      <p>Jeong Seon's Panoramic View stands as the defining achievement of the jingyeong sansuhwa movement — the true-view landscape tradition in which Joseon dynasty painters deliberately turned away from the imaginary, idealized landscapes inherited from Chinese painting conventions and instead committed themselves to the direct representation of actual Korean terrain. This was a culturally assertive act as much as an artistic one, reflecting a broader intellectual movement of the eighteenth century Joseon period in which Korean scholars and artists sought to articulate a distinctly Korean cultural identity grounded in the particular beauty of their own land rather than in perpetual deference to Chinese models. That Jeong Seon chose the Geumgang Mountains as his primary subject was itself a statement — these were mountains that Koreans had written about, poeticized, and made pilgrimage to for centuries, a landscape saturated with specifically Korean literary and spiritual association. The painting is held at the Ho-Am Art Museum in Korea and is reproduced so widely in Korean cultural life that it functions today as something close to a national symbol, an image as immediately legible to Korean viewers as Hokusai's Great Wave is to Japanese ones — a single composition that seems to contain within it an entire civilization's relationship with its own landscape.</p>
+    </section>
+  </main>
+  <%- include('partials/page-wrap-end') %>
+  <script src="/js/nav.js"></script>
+</body>
+</html>
+
