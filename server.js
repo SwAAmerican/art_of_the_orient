@@ -103,6 +103,83 @@ async function start() {
     });
   });
 
+  app.get('/symbolism/cherry-blossoms', (req, res) => {
+    res.render('symbolism-cherry-blossoms', {
+      pageTitle: 'Cherry Blossoms',
+      headerClass: 'header-symbolism',
+    });
+  });
+
+  app.get('/symbolism/four-gentlemen', (req, res) => {
+    res.render('symbolism-four-gentlemen', {
+      pageTitle: 'The Four Gentlemen – Plum, Orchid, Bamboo, Chrysanthemum',
+      headerClass: 'header-symbolism',
+    });
+  });
+
+  app.get('/symbolism/monastery-pavilion', (req, res) => {
+    res.render('symbolism-monastery-pavilion', {
+      pageTitle: 'Monastery – Pavillion',
+      headerClass: 'header-symbolism',
+    });
+  });
+
+  app.get('/symbolism/dragon', (req, res) => {
+    res.render('symbolism-dragon', {
+      pageTitle: 'Dragon',
+      headerClass: 'header-symbolism',
+    });
+  });
+
+  app.get('/symbolism/crane', (req, res) => {
+    res.render('symbolism-crane', {
+      pageTitle: 'Crane',
+      headerClass: 'header-symbolism',
+    });
+  });
+
+  app.get('/symbolism/rabbit', (req, res) => {
+    res.render('symbolism-rabbit', {
+      pageTitle: 'Rabbit',
+      headerClass: 'header-symbolism',
+    });
+  });
+
+  app.get('/symbolism/mount-fuji', (req, res) => {
+    res.render('symbolism-mount-fuji', {
+      pageTitle: 'Mount Fuji',
+      headerClass: 'header-symbolism',
+    });
+  });
+
+  app.get('/symbolism/kitsune-fox', (req, res) => {
+    res.render('symbolism-kitsune-fox', {
+      pageTitle: 'Kitsune – Fox',
+      headerClass: 'header-symbolism',
+    });
+  });
+
+  app.get('/symbolism/tiger-magpie', (req, res) => {
+    res.render('symbolism-tiger-magpie', {
+      pageTitle: 'Tiger and Magpie',
+      headerClass: 'header-symbolism',
+    });
+  });
+
+  app.get('/symbolism/sipjangsaeng', (req, res) => {
+    res.render('symbolism-sipjangsaeng', {
+      pageTitle: 'Sipjangsaeng – The Ten Longevity Symbols',
+      headerClass: 'header-symbolism',
+    });
+  });
+
+  app.get('/symbolism/chaekgeori', (req, res) => {
+    res.render('symbolism-chaekgeori', {
+      pageTitle: 'Chaekgeori',
+      headerClass: 'header-symbolism',
+    });
+  });
+
   app.get('/production', (req, res) => {
     res.render('production', {
       pageTitle: 'Production Techniques',
