@@ -165,7 +165,7 @@ body {
   background: var(--bg);
 }
 
-/* Left decorative strip (calligraphy) – background, behind center column */
+/* Left decorative strip (calligraphy) – all pages */
 .page-wrap {
   position: relative;
   flex: 1;
@@ -182,7 +182,7 @@ body {
   min-width: 260px;
   max-width: 560px;
   overflow: hidden;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -194,7 +194,7 @@ body {
   object-position: top center;
 }
 
-/* Right decorative strip (calligraphy) – background, behind center column */
+/* Right decorative strip (calligraphy) – all pages */
 .right-deco {
   position: fixed;
   right: 0;
@@ -204,7 +204,7 @@ body {
   min-width: 260px;
   max-width: 560px;
   overflow: hidden;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -216,10 +216,10 @@ body {
   object-position: top center;
 }
 
-/* Main – foreground; center column sits over the side calligraphy */
+/* Main – above decorative calligraphy side panels */
 .main {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   flex: 1;
   padding: 2rem;
   max-width: 1200px;
