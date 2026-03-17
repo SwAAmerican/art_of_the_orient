@@ -81,12 +81,12 @@ async function start() {
     const region = req.params.region.toLowerCase();
     const config = REGIONS[region];
     if (!config) return res.status(404).send('Gallery not found');
-    const artworks = queryArtworks(db, region);
     const featuredArtwork = region === 'china' ? {
       title: 'Along the River During the Qingming Festival.',
       image_url: '/images/qingming-festival.png',
       detailUrl: '/gallery/china/along-the-river-qingming',
     } : null;
+    const artworks = region === 'china' ? [] : queryArtworks(db, region);
     res.render('gallery', {
       pageTitle: config.title,
       headerClass: config.headerClass,

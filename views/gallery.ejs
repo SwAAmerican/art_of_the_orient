@@ -37,7 +37,7 @@
         </article>
       <% }); %>
     </div>
-    <% if (!artworks.length) { %>
+    <% if (!artworks.length && !(typeof featuredArtwork !== 'undefined' && featuredArtwork)) { %>
       <p class="empty-state">No artworks in this gallery yet.</p>
     <% } %>
   </main>
