@@ -110,6 +110,13 @@ async function start() {
     });
   });
 
+  app.get('/production/woodblock-printing', (req, res) => {
+    res.render('woodblock-printing', {
+      pageTitle: 'Woodblock Printing',
+      headerClass: 'header-production',
+    });
+  });
+
   app.get('/api/artworks', (req, res) => {
     const artworks = queryAllArtworks(db, req.query.region || null);
     res.json(artworks);
