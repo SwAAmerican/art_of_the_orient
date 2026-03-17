@@ -255,6 +255,14 @@ body {
   color: var(--text);
 }
 
+.section-text-full p {
+  margin-bottom: 1rem;
+}
+
+.section-text-full p:last-child {
+  margin-bottom: 0;
+}
+
 .section-image img {
   display: block;
   max-width: 100%;
