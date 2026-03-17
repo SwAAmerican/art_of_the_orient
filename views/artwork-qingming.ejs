@@ -42,6 +42,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass: 'header-china', pageTitle: 'Chinese Art' }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title" style="text-align: center;">Along the River During the Qingming Festival.</h2>
     <div class="artwork-detail-image-wrap">
@@ -56,6 +57,7 @@
       <p>The painting carries a melancholy historical dimension that deepens its significance considerably. The Northern Song dynasty and its glittering capital were destroyed by Jurchen invaders in 1127, just a few years after the scroll was completed, making Zhang Zeduan's panorama an inadvertent elegy for a world that would shortly cease to exist. The scroll thus became one of the most coveted objects in Chinese imperial history — treasured, stolen, hidden, and recovered across successive dynasties — and its survival to the present day is itself a remarkable story. It is now held in the Palace Museum in Beijing and is displayed only rarely due to its fragility, which has only deepened its status as a near-mythological object in Chinese cultural memory. For any student of Chinese painting, encountering this scroll — even in reproduction — is an encounter with the ambition, humanity, and extraordinary technical refinement that define the Song dynasty at its most confident.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

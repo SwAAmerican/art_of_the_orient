@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="production-techniques">
@@ -31,6 +32,7 @@
       </a>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

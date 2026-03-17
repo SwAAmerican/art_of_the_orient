@@ -8,12 +8,14 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="section-text section-text-full">
       <p>Yamato-e (大和絵), or "Japanese painting," is the classical native tradition that emerged in the Heian period in distinction to Chinese-influenced kara-e. Characterized by native subjects, narrative handscrolls (emakimono), screen and sliding-door compositions, and a refined palette keyed to the four seasons and courtly life, Yamato-e gave form to tales such as The Tale of Genji and scenes of famous places (meisho-e). It established a distinctly Japanese pictorial language that would influence later schools and remain central to the identity of Japanese art.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

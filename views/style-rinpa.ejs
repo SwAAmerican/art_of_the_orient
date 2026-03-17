@@ -8,12 +8,14 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="section-text section-text-full">
       <p>Rinpa (琳派) is the decorative tradition that grew from the work of Hon'ami Kōetsu and Tawaraya Sōtatsu in the early seventeenth century and was revived and refined by Ogata Kōrin and his followers. Known for bold, stylized compositions, lavish use of gold and silver leaf, and a breathtaking command of botanical and natural motifs — flowing water, autumn grasses, irises, maple leaves — Rinpa prioritizes pattern, rhythm, and emotional impact over naturalistic detail. The school's influence extended to lacquer, ceramics, and textiles and continues to define a quintessentially Japanese decorative aesthetic.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

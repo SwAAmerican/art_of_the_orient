@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <figure class="section-image" style="margin: 2rem auto 2rem; max-width: 720px;">
@@ -18,6 +19,7 @@
       <p>The kitsune exists in two distinct symbolic registers that run in parallel throughout Japanese art and literature without ever fully resolving into one another. In its divine aspect the fox is the sacred messenger and earthly embodiment of Inari, the Shinto deity of rice, agriculture, fertility, and worldly prosperity — one of the most widely venerated gods in the Japanese pantheon, whose shrines, marked by their characteristic rows of vermillion torii gates, are found in greater number than those of any other Shinto deity across the Japanese archipelago. In this capacity the fox is a figure of blessing and protection, and paintings and sculptural representations of white foxes flank Inari shrines as guardians of the sacred space, their supernatural intelligence harnessed in the service of divine will. Yet running alongside this protective, devotional identity is the kitsune's darker folkloric reputation as a trickster and a seducer, a creature that leads travelers astray, assumes the identities of loved ones, and undermines the stability of the human world through illusion and deception. It is the tension between these two natures — the divine messenger and the supernatural deceiver — that makes the kitsune such a compelling and enduring subject in Japanese painting, a creature whose symbolic richness derives precisely from its refusal to be reduced to a single, stable meaning, embodying instead the Japanese artistic sensibility's deep comfort with ambiguity, paradox, and the mystery of things that cannot be entirely known.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

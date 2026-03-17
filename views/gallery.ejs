@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main gallery-main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <div class="art-grid">
@@ -43,6 +44,7 @@
       <p class="empty-state">No artworks in this gallery yet.</p>
     <% } %>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

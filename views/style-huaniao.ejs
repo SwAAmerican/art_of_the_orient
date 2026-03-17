@@ -8,12 +8,14 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="section-text section-text-full">
       <p>Huaniao (花鳥), "flower and bird," is one of the most beloved and enduring genres in Chinese painting. From court gongbi renderings to freer ink studies, artists depicted birds, blossoms, insects, and plants with both botanical interest and symbolic meaning. The genre allowed painters to explore the natural world at an intimate scale while drawing on a rich vocabulary of auspicious and moral associations.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

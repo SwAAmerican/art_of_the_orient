@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <figure class="section-image" style="margin: 2rem auto 2rem; max-width: 720px;">
@@ -18,6 +19,7 @@
       <p>In the hands of the ukiyo-e masters, and particularly in the celebrated print series of Katsushika Hokusai, Mount Fuji accumulated a further layer of symbolic meaning as an emblem of the eternal set against the transient. Hokusai's Thirty-Six Views of Mount Fuji places the mountain in the background of scenes of ordinary human life — fishermen hauling nets, travelers crossing bridges, carpenters at work — while Fuji watches from the distance, unchanging, serene, and utterly indifferent to the passage of human time. This compositional strategy transforms the mountain into a meditation on impermanence, one of the central preoccupations of Japanese aesthetic thought: the world of human activity is fleeting and in constant motion, while Fuji endures. In this sense the mountain functions in Japanese painting much as certain landscape elements function in Chinese art — not as background but as philosophical presence, a silent protagonist whose stillness gives meaning to everything arrayed before it.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

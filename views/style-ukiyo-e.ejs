@@ -8,12 +8,14 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="section-text section-text-full">
       <p>Ukiyo-e (浮世絵), "pictures of the floating world," are the woodblock prints and paintings that captured the pleasures and transience of Edo-period urban life — kabuki actors, courtesans, famous views, travel, and the changing seasons. From the bold actor prints of Sharaku to the lyrical landscapes of Hokusai and Hiroshige, ukiyo-e combined skilled draftsmanship, innovative printing techniques, and commercial distribution to become one of the best-known Japanese art forms in the world. The genre embraced the fleeting beauty of the everyday and left an enduring mark on both Japanese visual culture and Western modernism.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

@@ -8,12 +8,14 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="section-text section-text-full">
       <p>Zenga (禅画) refers to the ink painting and calligraphy produced by Zen monks from the medieval period onward. Unlike art made for aesthetic display, Zenga was often created as a direct expression of enlightenment, teaching, or encounter — quick brushwork, circles (ensō), portraits of patriarchs, and inscriptions that could startle or illuminate. Masters such as Muqi, Sesshū, and Hakuin used the brush with minimal means and maximum spontaneity, blurring the line between painting and calligraphy and between art and spiritual practice. Zenga remains a touchstone for the idea of art as direct mind-to-mind transmission.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

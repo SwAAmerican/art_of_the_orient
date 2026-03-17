@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <figure class="section-image" style="margin: 2rem auto 2rem; max-width: 800px;">
@@ -18,6 +19,7 @@
       <p>In Korean and Japanese painting the crane retains its longevity symbolism while acquiring additional layers of cultural meaning particular to each tradition. In Korea the crane appears with great frequency in the Sipjangsaeng — the ten longevity symbols — where it is typically depicted in flight against a background of clouds and pine trees, its white form set against the deep blue of a stylized sky in a composition of vivid decorative power characteristic of the Joseon folk painting tradition. The pairing of crane and pine is one of the most beloved in all of Korean art, the two symbols reinforcing one another — the pine that endures through winter cold and the crane that lives for a thousand years combining into a single image of indomitable, graceful permanence. In Japan the crane carries these associations into the aesthetic world of the tea ceremony and the decorative arts, where its image appears on screens, ceramics, lacquerwork, and painted scrolls as an emblem of auspiciousness and refined longevity. Across all three traditions what is perhaps most striking is the consistency of the crane's symbolic identity — unlike the dragon, whose meaning shifts considerably between cultures, the crane speaks the same essential language everywhere it appears in East Asian art, its image a rare point of symbolic consensus in a region whose artistic traditions are far more diverse and independently developed than they are sometimes assumed to be.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

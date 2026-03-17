@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <figure class="section-image" style="margin: 2rem auto 2rem; max-width: 800px;">
@@ -18,6 +19,7 @@
       <p>In practical terms the cherry blossom permeates Japanese painting across virtually every school and period, from the aristocratic Yamato-e narrative scrolls of the Heian court — where cherry-viewing parties beneath blooming trees served as occasions for poetry, romance, and the melancholy contemplation of time's passage — to the bold decorative compositions of the Rinpa school, where blossoms are rendered with a stylized, almost abstract beauty that prioritizes emotional impact over botanical fidelity, to the ukiyo-e woodblock prints of the Edo period, where flowering cherry trees frame scenes of popular festival and urban pleasure with a delicate reminder of mortality lurking beneath the celebration. The fallen petal is as symbolically significant as the flower on the branch — perhaps more so, since it is in the act of falling that the blossom most completely fulfills its symbolic identity, drifting downward with a kind of serene acceptance that Japanese culture has long read as a model for the ideal attitude toward one's own mortality. It is worth noting that this symbolic vocabulary, so distinctly Japanese in its emotional register, has no precise equivalent in Chinese or Korean painting, and the cherry blossom stands as one of the clearest examples of how each of these three traditions, while sharing certain visual languages and philosophical inheritances, developed aesthetic values and symbolic systems that are finally and irreducibly their own.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

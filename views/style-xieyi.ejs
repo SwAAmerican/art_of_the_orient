@@ -8,12 +8,14 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="section-text section-text-full">
       <p>Xieyi (寫意), or "writing idea," emphasizes spontaneity and expression over literal description. Using ink wash and abbreviated brushwork, the painter captures the spirit of a subject rather than its surface detail. This approach, central to literati and ink painting, cultivates discipline and intuition in equal measure and has come to define much of what the world recognizes as classical Chinese painting.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

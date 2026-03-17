@@ -8,12 +8,14 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="section-text section-text-full">
       <p>Pungsokdo (풍속도), or "genre painting of customs," depicts the daily life, labor, and festivities of ordinary Koreans during the Joseon period. From farming and markets to banquets, wrestling, and kite-flying, these works offer a vivid record of social customs and class, often with a touch of humor or affection. The genre flourished among both court and independent painters and remains an important visual source for understanding traditional Korean society.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

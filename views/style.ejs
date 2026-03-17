@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <% const showChineseStyles = (typeof region !== 'undefined' && region === 'china') || pageTitle === 'Chinese Style'; %>
@@ -110,6 +111,7 @@
     </section>
     <% } %>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

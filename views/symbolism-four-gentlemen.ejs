@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <figure class="section-image" style="margin: 2rem auto 2rem; max-width: 900px;">
@@ -18,6 +19,7 @@
       <p>Each of the four plants carries a distinct symbolic identity rooted in its natural behavior. The plum blossom, which flowers in the bitter cold of late winter before any other plant dares to bloom, embodies courage, resilience, and the refusal to be diminished by adversity — it is the scholar who maintains his integrity in times of political danger or personal hardship. The orchid, growing in remote valleys far from human attention, represents the cultivation of virtue in obscurity and the purity of a spirit that does not require an audience to remain principled. Bamboo, which bends dramatically in the wind yet never breaks and returns always to its upright posture, is the most explicitly moral of the four — a direct visual metaphor for the Confucian ideal of the gentleman who yields under pressure without surrendering his fundamental character. The chrysanthemum, blooming late in autumn when the warmth of the year has withdrawn, speaks of dignified retirement from public life, the scholar who has served his time in the world and withdraws into private cultivation without bitterness or regret. Together the four describe not a single virtue but a complete portrait of the ideal life — from the courage of youth through the quiet integrity of middle years to the serene withdrawal of old age.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

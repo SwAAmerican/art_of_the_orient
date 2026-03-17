@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <figure class="section-image" style="margin: 2rem auto 2rem; max-width: 700px;">
@@ -18,6 +19,7 @@
       <p>In painting, the dragon is rendered according to a precise iconographic formula that accumulated and solidified over centuries: the body of a serpent, the scales of a fish, the claws of an eagle, the antlers of a deer, and the whiskers of a catfish, this composite anatomy encoding the dragon's dominion over all realms of the natural world simultaneously. It is almost always depicted in motion — coiling through storm clouds, ascending through mist, or descending toward churning water — and this dynamism is essential to its symbolic character, conveying the restless, generative energy of heaven itself. The flaming pearl that the dragon is so frequently shown pursuing or clutching is a symbol of wisdom, enlightenment, and the perfection of spiritual power, a goal forever sought and forever animating the dragon's celestial movement. In Korean and Japanese traditions the dragon retains much of this cosmological identity while acquiring additional local resonances — in Korea it is closely associated with the protection of the nation and the blessing of the sea, and Korean royal iconography drew deeply on the dragon's imperial vocabulary in ways that speak to the complex and creative relationship between these three civilizations and the symbolic languages they shared, adapted, and made distinctly their own.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

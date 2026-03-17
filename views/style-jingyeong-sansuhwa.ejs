@@ -8,12 +8,14 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="section-text section-text-full">
       <p>Jingyeong sansuhwa (진경산수화), or "true-view landscape painting," emerged in the Joseon dynasty as painters turned from idealized Chinese-style mountains to the actual scenery of the Korean peninsula. Artists traveled to famous sites — the Diamond Mountains, Mount Geumgang, coastal and river views — and recorded them with a distinctive sense of place, combining documentary interest with ink wash and color to create a uniquely Korean landscape tradition.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

@@ -8,12 +8,14 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="section-text section-text-full">
       <p>The Kano school (狩野派) was the dominant painting tradition from the Muromachi period through the Edo period, serving shoguns, emperors, and major temples. Founded by Kano Masanobu and consolidated by Kano Motonobu, the school combined Chinese-inspired ink painting with polychrome decoration and a workshop system that produced large-scale screens, wall paintings, and sliding-door cycles. Kano painters codified a durable repertoire of subjects — dragons, birds-and-flowers, landscapes, figures — and a balance of bold ink and refined color that came to define official and aristocratic taste in Japan for centuries.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

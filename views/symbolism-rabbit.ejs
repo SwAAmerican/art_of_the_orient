@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <figure class="section-image" style="margin: 2rem auto 2rem; max-width: 640px;">
@@ -18,6 +19,7 @@
       <p>In Japanese artistic tradition the moon rabbit — known as tsuki no usagi — was absorbed into a visual culture already deeply attuned to the symbolic resonances of moonlight, and it became one of the most beloved figures in the vast repertoire of imagery associated with the autumn moon-viewing festival of Otsukimi, a celebration of the harvest moon that has been practiced in Japan since the Heian period. Japanese paintings and woodblock prints depicting the moon rabbit tend to suffuse the image with the particular emotional quality of autumn moonlight — cool, luminous, faintly melancholy — that connects the rabbit's symbolism to the broader Japanese aesthetic preoccupation with impermanence and the beauty of transient natural phenomena. The full moon itself, in Japanese aesthetic thought, is an image of perfect and fleeting completeness — it will inevitably wane — and the rabbit's presence upon it deepens this symbolic register, the industrious little creature grinding away at its immortality medicines in a light that will not last the week. In Korea the moon rabbit similarly appears in folk painting and decorative art as a figure of gentle auspiciousness, its association with the moon lending it connections to the feminine, the cyclical, and the blessings of the harvest, and Chuseok — the Korean autumn harvest festival, often compared to Thanksgiving — carries within its moonlit celebrations an awareness of the rabbit's presence on the face of the full moon that has colored Korean culture's relationship to this image for as long as the festival itself has existed.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

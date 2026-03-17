@@ -8,12 +8,14 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="section-text section-text-full">
       <p>Minhwa (민화), or "painting of the people," is the vibrant Korean folk painting tradition in which tigers, magpies, peonies, and the ten symbols of longevity populate a world suffused with symbolism and communal joy. Created by anonymous and itinerant painters for ordinary households, Minhwa combines bold color, simplified forms, and auspicious themes — from chaekgeori still lifes to tiger-and-magpie compositions — and remains one of Korea's most beloved and recognizable painting styles.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

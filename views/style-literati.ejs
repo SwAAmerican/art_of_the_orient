@@ -8,12 +8,14 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="section-text section-text-full">
       <p>Literati painting (文人畫) refers to the tradition of scholar-amateurs who painted as an extension of poetry, calligraphy, and self-cultivation rather than as professional craftsmen. Favoring ink over color, spontaneity over finish, and expression over literal description, literati artists — from the Song through the Ming and Qing — made painting a vehicle for character and philosophical reflection, with subjects such as the Four Gentlemen and reclusive landscapes carrying deep moral and personal meaning.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

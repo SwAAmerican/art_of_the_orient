@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <figure class="section-image" style="margin: 2rem auto 2rem; max-width: 960px;">
@@ -18,6 +19,7 @@
       <p>As a compositional subject the Sipjangsaeng presented Korean painters with a remarkable creative challenge and opportunity — how to bring ten symbolically distinct elements into a single, coherent pictorial space without reducing the composition to a mere catalogue. The solutions developed over the course of the Joseon period are among the most visually inventive in the entire Korean tradition. In the great folding screen paintings produced for the royal court, the ten symbols are woven together into sweeping landscape compositions of extraordinary decorative richness, the cranes wheeling above pine-covered mountains while deer graze beside rushing streams and the mushroom of immortality glows among rocks drenched in the light of a stylized sun. The color palette in these works is characteristically vivid and unapologetically bold — deep mineral blues and greens, brilliant whites, warm ochres — a deliberate departure from the restrained ink wash aesthetic of the literati tradition that reflects Minhwa's roots in a popular visual culture that valued immediate emotional impact and celebratory abundance. To hang a Sipjangsaeng screen in a home or present one as a gift was an act of profound goodwill, an expression of the wish that the recipient might partake of the enduring vitality of the natural world itself — that their life might be as long as the mountains, as bright as the sun, and as graceful as the crane ascending through the clear morning air.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

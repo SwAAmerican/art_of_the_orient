@@ -8,12 +8,14 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <section class="section-text section-text-full">
       <p>Gongbi (工筆), or "meticulous brush," is the technique of fine-line brushwork and brilliant mineral pigments used to render subjects with almost jewel-like precision. It flourished in court and professional painting, particularly for figures, birds-and-flowers, and narrative scenes. The painter builds form through controlled outlines and layered color rather than spontaneous washes, producing works of refined detail and lasting clarity.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>

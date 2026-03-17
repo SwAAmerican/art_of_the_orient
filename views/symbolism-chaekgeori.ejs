@@ -8,6 +8,7 @@
 </head>
 <body>
   <%- include('partials/header', { headerClass, pageTitle }) %>
+  <%- include('partials/page-wrap-start') %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
     <figure class="section-image" style="margin: 2rem auto 2rem; max-width: 960px;">
@@ -18,6 +19,7 @@
       <p>The books themselves are the centerpiece of the symbolic program, representing the classical Chinese texts — the histories, the poetry anthologies, the philosophical and ritual canons — that formed the foundation of Joseon scholarly education and defined the identity of the cultivated class. Alongside them, the Four Treasures of the Study — brush, ink stick, inkstone, and paper — appear with great frequency, signifying the scholar's daily practice and his devotion to the written and painted arts. Auspicious objects woven among the books deepen the symbolic register further: a ruyi scepter suggests the fulfillment of wishes and the blessing of a long and prosperous life; a bronze incense burner evokes ritual propriety and the cultivation of a refined domestic atmosphere; porcelain vessels and lacquer boxes speak of aesthetic discernment and material culture at its most elevated. Curiously, Chaekgeori was not painted exclusively for scholars — the genre was enormously popular across Joseon society, suggesting that the objects of the scholarly life had become aspirational symbols in a broader cultural sense, the painted bookshelf serving as an image of the educated, virtuous, and auspicious household that many Koreans wished to inhabit, whether or not they had the means or opportunity to do so in reality.</p>
     </section>
   </main>
+  <%- include('partials/page-wrap-end') %>
   <script src="/js/nav.js"></script>
 </body>
 </html>
