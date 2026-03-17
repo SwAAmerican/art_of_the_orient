@@ -283,6 +283,11 @@ body {
   box-shadow: var(--shadow);
 }
 
+.home-section-symbolism .section-image-symbolism-right {
+  flex: 0 0 34%;
+  max-width: 34%;
+}
+
 .home-section-symbolism .section-text-symbolism {
   flex: 1;
   min-width: 0;
