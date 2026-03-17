@@ -106,7 +106,8 @@ async function start() {
         detailUrl: '/gallery/china/travelers-mountains-streams',
       },
     ] : [];
-    const artworks = region === 'china' ? [] : queryArtworks(db, region);
+    const artworks =
+      region === 'china' || region === 'japan' ? [] : queryArtworks(db, region);
     res.render('gallery', {
       pageTitle: config.title,
       headerClass: config.headerClass,
