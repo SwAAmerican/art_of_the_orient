@@ -13,6 +13,7 @@ html {
   --header-china: #b8860b;
   --header-japan: #b91c1c;
   --header-korea: #166534;
+  --header-symbolism: #166534;
   --text: #1f2937;
   --text-muted: #6b7280;
   --bg: #fafaf9;
@@ -79,6 +80,10 @@ body {
 
 .site-header.header-korea {
   background: var(--header-korea);
+}
+
+.site-header.header-symbolism {
+  background: var(--header-symbolism);
 }
 
 .header-title {

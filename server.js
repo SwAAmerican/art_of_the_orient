@@ -96,6 +96,13 @@ async function start() {
     });
   });
 
+  app.get('/symbolism', (req, res) => {
+    res.render('symbolism', {
+      pageTitle: 'Oriental Symbolism',
+      headerClass: 'header-symbolism',
+    });
+  });
+
   app.get('/api/artworks', (req, res) => {
     const artworks = queryAllArtworks(db, req.query.region || null);
     res.json(artworks);
