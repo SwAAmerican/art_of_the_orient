@@ -93,6 +93,10 @@ async function start() {
     res.render('artwork-wind-god-thunder-god');
   });
 
+  app.get('/gallery/japan/pine-trees', (req, res) => {
+    res.render('artwork-pine-trees');
+  });
+
   app.get('/gallery/korea/geumgang-mountains', (req, res) => {
     res.render('artwork-geumgang-mountains');
   });
@@ -139,6 +143,11 @@ async function start() {
               title: 'Winter Landscape',
               image_url: '/images/winter-landscape-sesshu.png',
               detailUrl: '/gallery/japan/winter-landscape',
+            },
+            {
+              title: 'Pine Trees',
+              image_url: '/images/pine-trees-left.png',
+              detailUrl: '/gallery/japan/pine-trees',
             },
           ]
         : region === 'korea'

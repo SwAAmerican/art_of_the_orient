@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pine Trees – Art of the Orient</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .artwork-detail-image-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .artwork-detail-image-wrap img {
+      max-width: min(95vw, 1000px);
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .artwork-meta {
+      max-width: 720px;
+      margin: 0 auto 1.5rem;
+      padding: 0 1rem;
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+    .artwork-meta li {
+      margin-bottom: 0.35rem;
+    }
+    .artwork-detail-text {
+      max-width: 720px;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+    }
+    .artwork-detail-text p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <%- include('partials/header', { headerClass: 'header-japan', pageTitle: 'Japanese Art' }) %>
+  <%- include('partials/page-wrap-start') %>
+  <main class="main">
+    <h2 class="gallery-title" style="text-align: center;">Pine Trees</h2>
+    <div class="artwork-detail-image-wrap">
+      <img src="/images/pine-trees-left.png" alt="Pine Trees (left screen) by Hasegawa Tōhaku, Momoyama period ink wash folding screen" />
+      <img src="/images/pine-trees-right.png" alt="Pine Trees (right screen) by Hasegawa Tōhaku, Momoyama period ink wash folding screen" />
+    </div>
+    <ul class="artwork-meta">
+      <li>Year: 1595</li>
+      <li>Artist: Hasegawa Tōhaku</li>
+    </ul>
+    <section class="artwork-detail-text section-text section-text-full">
+      <p>Pine Trees, painted by Hasegawa Tōhaku around 1595 during the Momoyama period, is among the most quietly overwhelming works in the entire history of Japanese painting — a pair of six-panel folding screens that present, across their combined expanse, a grove of pine trees emerging from and dissolving back into a field of white mist so complete and enveloping that the boundary between the painted surface and empty air seems genuinely uncertain, the trees materializing out of nothingness and returning to it with a gradualness that feels less like a compositional device than a philosophical statement about the nature of form, presence, and impermanence. Tōhaku worked almost exclusively in ink wash without color — a radical choice for a period dominated by the gold-saturated, brilliantly pigmented screen paintings of the Kano school establishment — building the forms of his pine trunks, branches, and needle clusters through successive applications of diluted ink in tones ranging from the faintest imaginable gray to a deep, saturated black, the variation in tone serving simultaneously to model the three-dimensional solidity of individual trees and to suggest their varying degrees of recession into the enveloping mist, the darkest and most fully rendered forms reading as closest, the palest and most dissolved as furthest, a spatial logic of remarkable subtlety achieved entirely through the modulation of a single pigment on an unpainted ground. The composition is asymmetrical and deliberately incomplete — the mist swallowing portions of trees that the eye instinctively completes, the groupings of trunks and branches arranged with an apparent casualness that conceals an underlying compositional intelligence of the highest order — and the overall effect is of a landscape perceived not in the clear light of ordinary vision but in a state of heightened, meditative receptivity in which the world reveals itself partially, intermittently, and with a beauty inseparable from its elusiveness.</p>
+      <p>Tōhaku is known to have deeply admired the work of Sesshū Tōyō, the great fifteenth century Zen ink painter whom he considered his artistic ancestor and spiritual predecessor, and Pine Trees can be understood as both a homage to and a profound transformation of the Sesshū tradition — absorbing the Chinese-derived ink wash vocabulary that Sesshū had naturalized into Japanese painting and pushing it toward an atmospheric dissolution more extreme and more emotionally affecting than anything in the Chinese or earlier Japanese ink traditions, a dissolution that owes as much to the Japanese aesthetic concept of ma — the meaningful, expressive use of empty space and interval — as it does to any Chinese precedent. The pine tree itself carried an enormous weight of symbolic association in the East Asian cultural tradition, signifying longevity, steadfastness, and the endurance of integrity through adversity, its evergreen nature read as an emblem of the cultivated person who maintains their essential character through the hardships of winter and the pressures of the world — associations that deepen the emotional resonance of Tōhaku's composition without reducing it to mere illustration, the trees becoming presences of a contemplative gravity that exceeds any single symbolic meaning. Pine Trees is held at the Tokyo National Museum where it is designated a National Treasure of Japan, and it stands as one of the most compelling arguments in the entire Japanese artistic tradition for the proposition that restraint, emptiness, and the disciplined renunciation of color and decoration can achieve an emotional and spiritual power that no amount of gold leaf or mineral pigment can surpass — a proposition that feels, in the presence of these quietly magnificent screens, not like an aesthetic position but like an established and irrefutable fact.</p>
+    </section>
+  </main>
+  <%- include('partials/page-wrap-end') %>
+  <script src="/js/nav.js"></script>
+</body>
+</html>
