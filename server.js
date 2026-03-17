@@ -103,6 +103,13 @@ async function start() {
     });
   });
 
+  app.get('/production', (req, res) => {
+    res.render('production', {
+      pageTitle: 'Production Techniques',
+      headerClass: 'header-production',
+    });
+  });
+
   app.get('/api/artworks', (req, res) => {
     const artworks = queryAllArtworks(db, req.query.region || null);
     res.json(artworks);

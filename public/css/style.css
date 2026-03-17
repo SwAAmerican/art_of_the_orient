@@ -14,6 +14,7 @@ html {
   --header-japan: #b91c1c;
   --header-korea: #166534;
   --header-symbolism: #4b5563;
+  --header-production: #111111;
   --text: #1f2937;
   --text-muted: #6b7280;
   --bg: #fafaf9;
@@ -84,6 +85,10 @@ body {
 
 .site-header.header-symbolism {
   background: var(--header-symbolism);
+}
+
+.site-header.header-production {
+  background: var(--header-production);
 }
 
 .header-title {
