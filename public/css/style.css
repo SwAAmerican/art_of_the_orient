@@ -406,6 +406,10 @@ body {
   vertical-align: middle;
 }
 
+.production-technique-figure img.symbolism-crane-image {
+  object-position: top center;
+}
+
 .production-technique-subtitle {
   margin: 0;
   padding: 1rem;
