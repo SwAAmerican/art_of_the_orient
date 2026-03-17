@@ -119,7 +119,7 @@ async function start() {
 
   app.get('/symbolism/monastery-pavilion', (req, res) => {
     res.render('symbolism-monastery-pavilion', {
-      pageTitle: 'Monastery – Pavillion',
+      pageTitle: 'Monastery – Pavilion',
       headerClass: 'header-symbolism',
     });
   });
