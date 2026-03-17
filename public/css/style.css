@@ -94,10 +94,10 @@ body {
 .header-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .nav-btn {
@@ -106,7 +106,7 @@ body {
   background: transparent;
   border: none;
   cursor: pointer;
-  padding: 0.5rem 0.85rem;
+  padding: 0.5rem 1.25rem;
   border-radius: var(--radius);
   text-decoration: none;
 }
