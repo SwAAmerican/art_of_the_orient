@@ -93,6 +93,42 @@ async function start() {
     res.render('style', {
       pageTitle: config.title,
       headerClass: config.headerClass,
+      region,
+    });
+  });
+
+  app.get('/style/china/gongbi', (req, res) => {
+    res.render('style-gongbi', {
+      pageTitle: 'Gongbi',
+      headerClass: 'header-china',
+    });
+  });
+
+  app.get('/style/china/xieyi', (req, res) => {
+    res.render('style-xieyi', {
+      pageTitle: 'Xieyi',
+      headerClass: 'header-china',
+    });
+  });
+
+  app.get('/style/china/shanshui', (req, res) => {
+    res.render('style-shanshui', {
+      pageTitle: 'Shanshui',
+      headerClass: 'header-china',
+    });
+  });
+
+  app.get('/style/china/huaniao', (req, res) => {
+    res.render('style-huaniao', {
+      pageTitle: 'Huaniao',
+      headerClass: 'header-china',
+    });
+  });
+
+  app.get('/style/china/literati', (req, res) => {
+    res.render('style-literati', {
+      pageTitle: 'Literati',
+      headerClass: 'header-china',
     });
   });
 
