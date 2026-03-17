@@ -10,8 +10,8 @@
   <%- include('partials/header', { headerClass, pageTitle }) %>
   <main class="main">
     <h2 class="gallery-title"><%= pageTitle %></h2>
-    <% if (typeof region !== 'undefined' && region === 'china') { %>
-    <h3 class="gallery-subtitle">Chinese Styles</h3>
+    <% const showChineseStyles = (typeof region !== 'undefined' && region === 'china') || pageTitle === 'Chinese Style'; %>
+    <% if (showChineseStyles) { %>
     <section class="production-techniques">
       <a href="/style/china/gongbi" class="production-technique-card">
         <figure class="production-technique-figure">
@@ -42,6 +42,35 @@
           <img src="/images/silk-sizing.png" alt="Literati: scholar-amateur painting" />
         </figure>
         <p class="production-technique-subtitle">Literati</p>
+      </a>
+    </section>
+    <% } %>
+    <% const showKoreanStyles = (typeof region !== 'undefined' && region === 'korea') || pageTitle === 'Korean Style'; %>
+    <% if (showKoreanStyles) { %>
+    <section class="production-techniques">
+      <a href="/style/korea/minhwa" class="production-technique-card">
+        <figure class="production-technique-figure">
+          <img src="/images/symbolism-tiger-magpie.png" alt="Minhwa: Korean folk painting" />
+        </figure>
+        <p class="production-technique-subtitle">Minhwa</p>
+      </a>
+      <a href="/style/korea/jingyeong-sansuhwa" class="production-technique-card">
+        <figure class="production-technique-figure">
+          <img src="/images/symbolism-tiger-magpie.png" alt="Jingyeong Sansuhwa: true-view landscape" />
+        </figure>
+        <p class="production-technique-subtitle">Jingyeong Sansuhwa</p>
+      </a>
+      <a href="/style/korea/pungsokdo" class="production-technique-card">
+        <figure class="production-technique-figure">
+          <img src="/images/symbolism-tiger-magpie.png" alt="Pungsokdo: genre painting of customs" />
+        </figure>
+        <p class="production-technique-subtitle">Pungsokdo</p>
+      </a>
+      <a href="/style/korea/bulhwa" class="production-technique-card">
+        <figure class="production-technique-figure">
+          <img src="/images/symbolism-tiger-magpie.png" alt="Bulhwa: Buddhist painting" />
+        </figure>
+        <p class="production-technique-subtitle">Bulhwa</p>
       </a>
     </section>
     <% } %>

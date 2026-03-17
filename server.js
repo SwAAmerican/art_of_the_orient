@@ -132,6 +132,34 @@ async function start() {
     });
   });
 
+  app.get('/style/korea/minhwa', (req, res) => {
+    res.render('style-minhwa', {
+      pageTitle: 'Minhwa',
+      headerClass: 'header-korea',
+    });
+  });
+
+  app.get('/style/korea/jingyeong-sansuhwa', (req, res) => {
+    res.render('style-jingyeong-sansuhwa', {
+      pageTitle: 'Jingyeong Sansuhwa',
+      headerClass: 'header-korea',
+    });
+  });
+
+  app.get('/style/korea/pungsokdo', (req, res) => {
+    res.render('style-pungsokdo', {
+      pageTitle: 'Pungsokdo',
+      headerClass: 'header-korea',
+    });
+  });
+
+  app.get('/style/korea/bulhwa', (req, res) => {
+    res.render('style-bulhwa', {
+      pageTitle: 'Bulhwa',
+      headerClass: 'header-korea',
+    });
+  });
+
   app.get('/symbolism', (req, res) => {
     res.render('symbolism', {
       pageTitle: 'Oriental Symbolism',
