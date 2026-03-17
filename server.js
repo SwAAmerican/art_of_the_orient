@@ -102,7 +102,7 @@ async function start() {
       },
       {
         title: 'Travelers Among Mountains and Streams',
-        image_url: '/images/travelers-mountains-streams.jpg',
+        image_url: '/images/travelers-mountains-streams-icon.jpg',
         detailUrl: '/gallery/china/travelers-mountains-streams',
       },
     ] : [];
