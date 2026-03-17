@@ -216,8 +216,10 @@ body {
   object-position: top center;
 }
 
-/* Main */
+/* Main – above decorative calligraphy side panels */
 .main {
+  position: relative;
+  z-index: 2;
   flex: 1;
   padding: 2rem;
   max-width: 1200px;
