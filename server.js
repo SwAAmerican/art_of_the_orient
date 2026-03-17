@@ -117,6 +117,13 @@ async function start() {
     });
   });
 
+  app.get('/production/four-treasures', (req, res) => {
+    res.render('four-treasures', {
+      pageTitle: 'Four Treasures of the Study',
+      headerClass: 'header-production',
+    });
+  });
+
   app.get('/api/artworks', (req, res) => {
     const artworks = queryAllArtworks(db, req.query.region || null);
     res.json(artworks);
