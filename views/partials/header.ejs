@@ -1,8 +1,9 @@
 <header class="site-header <%= typeof headerClass !== 'undefined' ? headerClass : 'header-default' %>">
   <a href="/" class="header-home">Home</a>
-  <div class="header-brand">
-    <span class="header-title"><%= typeof pageTitle !== 'undefined' ? pageTitle : 'Art of the Orient' %></span>
-    <nav class="header-nav">
+  <div class="header-title-center">
+    <a href="/" class="header-title"><%= typeof pageTitle !== 'undefined' ? pageTitle : 'Art of the Orient' %></a>
+  </div>
+  <nav class="header-nav" aria-label="Main">
     <div class="nav-item dropdown">
       <button type="button" class="nav-btn" id="gallery-btn" aria-haspopup="true" aria-expanded="false">Gallery</button>
       <ul class="dropdown-list" id="gallery-dropdown" role="menu">
@@ -21,6 +22,5 @@
     </div>
     <a href="/symbolism" class="nav-btn">Symbolism</a>
     <a href="/production" class="nav-btn">Production Techniques</a>
-    </nav>
-  </div>
+  </nav>
 </header>
